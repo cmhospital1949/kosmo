@@ -1,0 +1,44 @@
+# 📁 운영체제
+.DS_Store
+Thumbs.db
+
+# 🧪 로그 및 임시 파일
+*.log
+*.tmp
+*.bak
+*.swp
+
+# 🧰 편집기 & IDE 설정
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 📦 패키지 관리자
+node_modules/
+dist/
+build/
+
+# 💻 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# 📲 Android
+*.iml
+.gradle/
+local.properties
+*.apk
+*.aar
+
+# 🎮 Unity, Unreal 등 (선택적)
+Library/
+Temp/
+obj/
+Build/
+
+# ✨ 기타
+.env*
+!.env.example

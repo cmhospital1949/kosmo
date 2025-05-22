@@ -1,0 +1,11 @@
+# Protect directory from direct access
+Options -Indexes
+
+# Enable PHP error display for development
+php_flag display_errors On
+
+# Block access to sensitive files
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>

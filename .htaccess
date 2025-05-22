@@ -1,0 +1,21 @@
+# KOSMO Foundation Website .htaccess - Simplified
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Handle language selection
+RewriteRule ^en/(.*)$ /$1?lang=en [L,QSA]
+RewriteRule ^ko/(.*)$ /$1?lang=ko [L,QSA]
+
+# Rewrite URLs for programs
+RewriteRule ^programs/([a-zA-Z0-9-]+)/?$ program.php?slug=$1 [L,QSA]
+
+# Set error documents
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+# Prevent directory listing
+Options -Indexes

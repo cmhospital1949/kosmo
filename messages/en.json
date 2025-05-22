@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "programs": "Programs",
+    "news": "News",
+    "contact": "Contact",
+    "donate": "Donate"
+  },
+  "homepage": {
+    "hero_title": "Supporting Korea's Future",
+    "hero_subtitle": "KOSMO Foundation works with the Ministry of Culture, Sports and Tourism to support Korea's national athletes and sports development.",
+    "our_programs": "Our Programs",
+    "view_all_programs": "View All Programs",
+    "recent_news": "Recent News",
+    "view_all_news": "View All News",
+    "mission_title": "Our Mission",
+    "mission_description": "KOSMO Foundation is dedicated to providing medical support, education, and resources to student-athletes, teams, and sports professionals across Korea."
+  },
+  "footer": {
+    "foundation_description": "KOSMO Foundation is a government-certified non-profit organization dedicated to supporting medical care, education, and development for athletes and sports professionals.",
+    "navigation": "Navigation",
+    "donate": "Donate",
+    "donation_account": "Donation Account Information",
+    "account_holder": "Account Holder",
+    "donate_now": "Donate Now",
+    "address": "Address",
+    "all_rights_reserved": "All rights reserved."
+  },
+  "programs": {
+    "all_programs": "All Programs",
+    "learn_more": "Learn More",
+    "get_involved": "Get Involved"
+  },
+  "news": {
+    "latest_news": "Latest News",
+    "filter_by": "Filter By",
+    "all_categories": "All Categories",
+    "read_more": "Read More",
+    "back_to_news": "Back to News",
+    "share_this": "Share This Article",
+    "related_articles": "Related Articles",
+    "view_all_news": "View All News"
+  },
+  "about": {
+    "our_story": "Our Story",
+    "our_mission": "Our Mission",
+    "our_vision": "Our Vision",
+    "our_team": "Our Team",
+    "our_partners": "Our Partners"
+  },
+  "contact": {
+    "get_in_touch": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "address": "Address",
+    "phone": "Phone"
+  },
+  "donate": {
+    "support_our_cause": "Support Our Cause",
+    "donation_options": "Donation Options",
+    "amount": "Amount",
+    "payment_methods": "Payment Methods",
+    "personal_info": "Personal Information",
+    "complete_donation": "Complete Donation"
+  }
+}

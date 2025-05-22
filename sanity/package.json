@@ -1,0 +1,29 @@
+{
+  "name": "kosmo-foundation-sanity",
+  "private": true,
+  "version": "1.0.0",
+  "description": "KOSMO Foundation CMS",
+  "main": "package.json",
+  "author": "KOSMO Foundation",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/client": "^6.4.12",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.21.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "sanity": "^3.21.0",
+    "styled-components": "^6.0.7"
+  }
+}
