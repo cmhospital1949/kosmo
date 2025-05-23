@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['kosmo.or.kr', 'kosmo.center'],
+    domains: ['kosmo.or.kr', 'www.kosmo.or.kr'],
   },
   i18n: {
     locales: ['en', 'ko'],

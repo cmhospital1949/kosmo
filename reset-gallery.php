@@ -57,88 +57,88 @@ try {
     $defaultGalleryImages = [
         $categoryRows[0]['id'] => [ // Foundation History
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/히스토리1-1024x586.png",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/히스토리1-1024x586.png",
                 "alt" => "KOSMO Foundation History Timeline",
                 "caption" => "Foundation establishment timeline"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/조직도4_230316.png",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/조직도4_230316.png",
                 "alt" => "KOSMO Foundation Organization Chart",
                 "caption" => "Foundation organization structure"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/진천선수촌-개촌식.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/진천선수촌-개촌식.jpg",
                 "alt" => "Jincheon Athletes Village Opening Ceremony",
                 "caption" => "Jincheon National Athletes Village opening ceremony"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/대한체육회-기념식-참가.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/대한체육회-기념식-참가.jpg",
                 "alt" => "Korean Sports Association Ceremony",
                 "caption" => "Korean Sports Association 98th Anniversary Ceremony"
             ]
         ],
         $categoryRows[1]['id'] => [ // Sports Medicine
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/IMG_3319-scaled.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/IMG_3319-scaled.jpg",
                 "alt" => "Sports Medicine Practice",
                 "caption" => "Sports medicine professionals at work"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/IMG_3354-scaled.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/IMG_3354-scaled.jpg",
                 "alt" => "Medical Support Team",
                 "caption" => "Medical support team for athletes"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/IMG_3258-scaled.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/IMG_3258-scaled.jpg",
                 "alt" => "Medical Equipment",
                 "caption" => "State-of-the-art medical equipment"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/IMG_3370-scaled.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/IMG_3370-scaled.jpg",
                 "alt" => "Medical Consultation",
                 "caption" => "Medical consultation for athletes"
             ]
         ],
         $categoryRows[2]['id'] => [ // Athlete Support
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/한일배구.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/한일배구.jpg",
                 "alt" => "Korea-Japan Volleyball",
                 "caption" => "Korea-Japan volleyball match"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/자카르타-아시안게임.png",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/자카르타-아시안게임.png",
                 "alt" => "Jakarta Asian Games",
                 "caption" => "Jakarta Asian Games"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/배구-국대-팀닥터.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/배구-국대-팀닥터.jpg",
                 "alt" => "National Volleyball Team Doctor",
                 "caption" => "National volleyball team with medical support"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/자카르타-아시안게임-2.png",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/자카르타-아시안게임-2.png",
                 "alt" => "Jakarta Asian Games 2",
                 "caption" => "Medical support at Jakarta Asian Games"
             ]
         ],
         $categoryRows[3]['id'] => [ // Seminars & Events
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/개촌식2.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/개촌식2.jpg",
                 "alt" => "Opening Ceremony 2",
                 "caption" => "Foundation seminar and opening ceremony"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/개촌식3.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/개촌식3.jpg",
                 "alt" => "Opening Ceremony 3",
                 "caption" => "Foundation inauguration event"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/대한체육-기념식-2.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/대한체육-기념식-2.jpg",
                 "alt" => "Korean Sports Association Ceremony 2",
                 "caption" => "Sports association anniversary celebration"
             ],
             [
-                "src" => "http://kosmo.center/wp-content/uploads/2023/03/170586_151041_2238.jpg",
+                "src" => "http://www.kosmo.or.kr/wp-content/uploads/2023/03/170586_151041_2238.jpg",
                 "alt" => "Medical Conference",
                 "caption" => "Sports medicine conference and seminar"
             ]
