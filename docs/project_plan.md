@@ -228,9 +228,21 @@ donation_settings: id, bank_name, account_number, account_holder, business_numbe
 - Email: goodwill@kosmo.or.kr
 - Website: http://www.kosmo.or.kr/
 
+## Server Information
+- Web Server: http://www.kosmo.or.kr
+- FTP: 211.47.74.55 (ID: bestluck / Password: cmhospital1949!)
+- Database Server: db.kosmo.or.kr (211.47.74.49)
+  - DB Name: dbbestluck
+  - User: bestluck
+  - Password: cmhospital1949!
+
 ## Admin Access
 - URL: http://www.kosmo.or.kr/admin.php
 - Default credentials: username: admin / password: admin123
+
+## Initial Setup
+1. Copy `.env.example` to `.env`.
+2. Run `php admin/db_setup.php` to create the initial database tables.
 
 ## Phase 2 Features Implementation (Complete)
 - **News Section**: Implemented with categories, listing page, and detailed post view ✅
