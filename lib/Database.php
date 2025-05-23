@@ -59,6 +59,7 @@ class Database
             putenv('DB_PASS=cmhospital1949!');
             $_ENV['DB_PASS'] = 'cmhospital1949!';
             $_SERVER['DB_PASS'] = 'cmhospital1949!';
+
         }
     }
 
