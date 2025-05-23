@@ -230,7 +230,7 @@ $t = $translations[$locale];
                     <div class="mb-12">
                         <h3 class="text-xl font-semibold mb-4"><?php echo $t['foundation_history']; ?></h3>
                         <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-                            <img src="http://kosmo.center/wp-content/uploads/2023/03/히스토리1-1024x586.png" alt="Foundation History Timeline" class="w-full rounded-lg mb-4">
+                            <img src="http://www.kosmo.or.kr/wp-content/uploads/2023/03/히스토리1-1024x586.png" alt="Foundation History Timeline" class="w-full rounded-lg mb-4">
                             <p class="text-gray-700"><?php echo $t['history_description']; ?></p>
                         </div>
                     </div>
@@ -267,7 +267,7 @@ $t = $translations[$locale];
                         
                         <!-- Display the full organization chart image -->
                         <div class="bg-gray-50 p-6 rounded-lg shadow-sm mb-6">
-                            <img src="http://kosmo.center/wp-content/uploads/2023/03/조직도4_230316.png" alt="KOSMO Foundation Organization Chart" class="w-full rounded-lg">
+                            <img src="http://www.kosmo.or.kr/wp-content/uploads/2023/03/조직도4_230316.png" alt="KOSMO Foundation Organization Chart" class="w-full rounded-lg">
                         </div>
                     </div>
                     
