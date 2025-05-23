@@ -110,7 +110,7 @@ $t = $translations[$locale];
     <meta property="og:title" content="<?php echo $t['site_title']; ?>">
     <meta property="og:description" content="<?php echo $t['about_description']; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://bestluck.dothome.co.kr/about.php">
+    <meta property="og:url" content="http://www.kosmo.or.kr/about.php">
     <meta property="og:image" content="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
     
     <!-- Link to Tailwind CSS from CDN -->

@@ -1,10 +1,10 @@
 <?php
 // Database connection
 function connect_db() {
-    $host = 'localhost';
-    $dbname = 'bestluck';
+    $host = 'db.kosmo.or.kr';
+    $dbname = 'dbbestluck';
     $username = 'bestluck';
-    $password = 'Nocpriss12!';
+    $password = 'cmhospital1949!';
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
@@ -131,7 +131,7 @@ try {
 // This script will update the admin.php file to fix the sync_gallery_with_frontend function
 
 // Get current category IDs
-\$pdo = new PDO('mysql:host=localhost;dbname=bestluck;charset=utf8mb4', 'bestluck', 'Nocpriss12!');
+\$pdo = new PDO('mysql:host=db.kosmo.or.kr;dbname=dbbestluck;charset=utf8mb4', 'bestluck', 'cmhospital1949!');
 \$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 \$stmt = \$pdo->query('SELECT id, name FROM gallery_categories ORDER BY id');
@@ -144,7 +144,7 @@ foreach (\$categories as \$category) {
 }
 
 // Read the admin.php file
-\$adminFile = file_get_contents('/home/dothome/bestluck/html/admin.php');
+\$adminFile = file_get_contents('/home/bestluck/html/admin.php');
 
 // Find the sync_gallery_with_frontend function
 \$pattern = '/function sync_gallery_with_frontend\\(\\) \\{.*?\\}/s';
@@ -322,7 +322,7 @@ if (!empty(\$matches[0])) {
     \$adminFile = preg_replace(\$pattern, \$newFunction, \$adminFile);
     
     // Write the updated file
-    file_put_contents('/home/dothome/bestluck/html/admin.php', \$adminFile);
+    file_put_contents('/home/bestluck/html/admin.php', \$adminFile);
     
     echo '<p style=\"color: green; font-weight: bold;\">Admin.php file updated successfully!</p>';
 } else {
@@ -333,7 +333,7 @@ echo '<p><a href=\"admin.php?view=gallery\">Return to Gallery Management</a></p>
 ?>";
     
     // Write the update script to a file
-    file_put_contents('/home/dothome/bestluck/html/fix-admin-gallery.php', $updateScript);
+    file_put_contents('/home/bestluck/html/fix-admin-gallery.php', $updateScript);
     echo "<p>Created fix-admin-gallery.php script.</p>";
     
     // Commit the transaction

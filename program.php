@@ -5,10 +5,10 @@ $locale = $_GET['lang'] ?? 'en';
 $isKorean = $locale === 'ko';
 
 // Database connection
-$host = 'localhost';
-$dbname = 'bestluck';
+$host = 'db.kosmo.or.kr';
+$dbname = 'dbbestluck';
 $username = 'bestluck';
-$password = 'Nocpriss12!';
+$password = 'cmhospital1949!';
 
 // Initialize $program variable with default values
 $program = [];

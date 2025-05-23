@@ -8,7 +8,7 @@ function display_message($message, $type = 'info') {
 
 // Connect to database
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=bestluck;charset=utf8mb4', 'bestluck', 'Nocpriss12!');
+    $pdo = new PDO('mysql:host=db.kosmo.or.kr;dbname=dbbestluck;charset=utf8mb4', 'bestluck', 'cmhospital1949!');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     display_message("Connected to database successfully.");

@@ -9,10 +9,10 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 
 // Database connection
 function connect_db() {
-    $host = 'localhost';
-    $dbname = 'bestluck';
+    $host = 'db.kosmo.or.kr';
+    $dbname = 'dbbestluck';
     $username = 'bestluck';
-    $password = 'Nocpriss12!';
+    $password = 'cmhospital1949!';
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

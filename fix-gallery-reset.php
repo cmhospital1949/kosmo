@@ -4,10 +4,10 @@
 // First, let's reset the gallery data completely to ensure a clean state
 function reset_gallery_data() {
     // Connect to the database
-    $host = 'localhost';
-    $dbname = 'bestluck';
+    $host = 'db.kosmo.or.kr';
+    $dbname = 'dbbestluck';
     $username = 'bestluck';
-    $password = 'Nocpriss12!';
+    $password = 'cmhospital1949!';
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

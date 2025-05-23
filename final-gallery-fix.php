@@ -2,10 +2,10 @@
 // Super focused gallery database fix with detailed debugging
 
 // Connect to the database
-$host = 'localhost';
-$dbname = 'bestluck';
+$host = 'db.kosmo.or.kr';
+$dbname = 'dbbestluck';
 $username = 'bestluck';
-$password = 'Nocpriss12!';
+$password = 'cmhospital1949!';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

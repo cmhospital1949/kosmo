@@ -174,7 +174,7 @@
 
 ### Deployment
 
-- Deployment via FTP to dothome.co.kr
+- Deployment via FTP to 211.47.74.55
 - Include proper file permissions
 - Backup database before major updates
 - Follow incremental deployment approach for large changes

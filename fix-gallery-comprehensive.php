@@ -7,10 +7,10 @@ echo "<p>Running gallery database reset and admin panel fix...</p>";
 // Step 1: Reset and rebuild the gallery database tables
 function reset_gallery_database() {
     // Connect to the database
-    $host = 'localhost';
-    $dbname = 'bestluck';
+    $host = 'db.kosmo.or.kr';
+    $dbname = 'dbbestluck';
     $username = 'bestluck';
-    $password = 'Nocpriss12!';
+    $password = 'cmhospital1949!';
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
@@ -701,10 +701,10 @@ function create_direct_gallery_reset() {
 // Direct gallery database reset that bypasses transaction logic
 
 // Connect to the database
-\$host = 'localhost';
-\$dbname = 'bestluck';
+\$host = 'db.kosmo.or.kr';
+\$dbname = 'dbbestluck';
 \$username = 'bestluck';
-\$password = 'Nocpriss12!';
+\$password = 'cmhospital1949!';
 
 try {
     \$pdo = new PDO(\"mysql:host=\$host;dbname=\$dbname;charset=utf8mb4\", \$username, \$password);

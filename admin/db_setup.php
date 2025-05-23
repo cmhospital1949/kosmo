@@ -1,9 +1,9 @@
 <?php
 // Database setup script
-$dbHost = 'localhost';
-$dbName = 'bestluck';
+$dbHost = 'db.kosmo.or.kr';
+$dbName = 'dbbestluck';
 $dbUser = 'bestluck';
-$dbPassword = 'Nocpriss12!';
+$dbPassword = 'cmhospital1949!';
 
 try {
     // First, check if the database exists

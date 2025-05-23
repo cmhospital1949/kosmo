@@ -93,7 +93,7 @@ $t = $translations[$locale];
             
             <p class="text-gray-500 text-sm"><?php echo $t['report_issue']; ?></p>
             
-            <?php if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'bestluck.dothome.co.kr'): ?>
+            <?php if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'www.kosmo.or.kr'): ?>
             <div class="mt-8 p-4 bg-gray-100 text-left text-sm text-gray-600">
                 <strong>Technical Information:</strong>
                 <pre class="overflow-auto"><?php 
