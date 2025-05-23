@@ -99,10 +99,10 @@ if ($lang == 'en') {
 // Get the featured programs from database
 try {
     // Database connection
-    $host = 'localhost';
-    $dbname = 'bestluck';
+    $host = 'db.kosmo.or.kr';
+    $dbname = 'dbbestluck';
     $username = 'bestluck';
-    $password = 'Nocpriss12!';
+    $password = 'cmhospital1949!';
     
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

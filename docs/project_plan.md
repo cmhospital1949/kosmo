@@ -2,7 +2,7 @@
 
 ## Project Overview
 - **Client**: KOSMO Foundation (국가 인증 비영리 재단법인)
-- **Website**: https://www.kosmo.or.kr (planned)
+- **Website**: https://www.kosmo.or.kr 
 - **Design Reference**: https://switchresearch.org/
 - **Features**: Bilingual support (English/Korean), Donation capabilities, Admin interface
 - **Current Status**: Complete website with enhanced content, images from original site, all core features, enhanced admin functionality, and Phase 2 features implemented
@@ -23,10 +23,10 @@
 ## Tech Stack
 - **Frontend**: PHP, HTML, CSS (Tailwind CSS via CDN)
 - **Backend**: PHP for form processing and dynamic content
-- **Database**: MySQL (bestluck)
+- **Database**: MySQL 8.0 (dbbestluck)
 - **Auth**: Session-based authentication for admin
 - **Payments**: KakaoPay REST (MVP) · NaverPay SDK (Phase 2) ✅
-- **Hosting**: dothome.co.kr shared hosting
+- **Hosting**: kosmo.or.kr shared hosting
 - **Rich Text Editing**: TinyMCE
 
 ## Project Structure
@@ -226,10 +226,10 @@ donation_settings: id, bank_name, account_number, account_holder, business_numbe
 - Bank Account: Shinhan Bank 140-013-927125 (한국스포츠의료지원재단)
 - Foundation Address: 서울 영등포구 문래로 187, 5층
 - Email: goodwill@kosmo.or.kr
-- Website: http://bestluck.dothome.co.kr/
+- Website: http://www.kosmo.or.kr/
 
 ## Admin Access
-- URL: http://bestluck.dothome.co.kr/admin.php
+- URL: http://www.kosmo.or.kr/admin.php
 - Default credentials: username: admin / password: admin123
 
 ## Phase 2 Features Implementation (Complete)

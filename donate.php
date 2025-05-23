@@ -1,10 +1,10 @@
 <?php
 // Database connection
 function connect_db() {
-    $host = 'localhost';
-    $dbname = 'bestluck';
+    $host = 'db.kosmo.or.kr';
+    $dbname = 'dbbestluck';
     $username = 'bestluck';
-    $password = 'Nocpriss12!';
+    $password = 'cmhospital1949!';
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
@@ -177,7 +177,7 @@ $t = $translations[$locale];
     <meta property="og:title" content="<?php echo $t['site_title']; ?>">
     <meta property="og:description" content="<?php echo $t['donation_description']; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://bestluck.dothome.co.kr/donate.php">
+    <meta property="og:url" content="http://www.kosmo.or.kr/donate.php">
     <meta property="og:image" content="https://images.unsplash.com/photo-1593113616828-6f22bca04804?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
     
     <!-- Link to Tailwind CSS from CDN -->

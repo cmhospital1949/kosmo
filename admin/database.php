@@ -8,10 +8,10 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 }
 
 // Database configuration
-$dbHost = 'localhost';
-$dbName = 'bestluck';
+$dbHost = 'db.kosmo.or.kr';
+$dbName = 'dbbestluck';
 $dbUser = 'bestluck';
-$dbPassword = 'Nocpriss12!';
+$dbPassword = 'cmhospital1949!';
 
 $message = '';
 $error = '';

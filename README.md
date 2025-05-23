@@ -28,8 +28,16 @@ The KOSMO Foundation website provides information about our organization, progra
 ## Technical Details
 
 - Built with PHP, HTML, CSS (Tailwind)
-- Hosted on dothome.co.kr
-- URL: http://bestluck.dothome.co.kr/
+- Hosted on kosmo.or.kr
+- URL: http://www.kosmo.or.kr/
+## Server Information
+- Web Server: http://www.kosmo.or.kr
+- FTP: 211.47.74.55 (ID: bestluck / Password: cmhospital1949!)
+- Database Server: db.kosmo.or.kr (211.47.74.49)
+  - DB Name: dbbestluck
+  - User: bestluck
+  - Password: cmhospital1949!
+
 
 ## Contact Information
 

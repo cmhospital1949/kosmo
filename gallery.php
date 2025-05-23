@@ -1,10 +1,10 @@
 <?php
 // Database connection
 function connect_db() {
-    $host = 'localhost';
-    $dbname = 'bestluck';
+    $host = 'db.kosmo.or.kr';
+    $dbname = 'dbbestluck';
     $username = 'bestluck';
-    $password = 'Nocpriss12!';
+    $password = 'cmhospital1949!';
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
@@ -293,7 +293,7 @@ foreach ($categories as $category) {
     <meta property="og:title" content="<?php echo $t['site_title']; ?>">
     <meta property="og:description" content="<?php echo $t['gallery_description']; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://bestluck.dothome.co.kr/gallery.php">
+    <meta property="og:url" content="http://www.kosmo.or.kr/gallery.php">
     <meta property="og:image" content="https://images.unsplash.com/photo-1571902943202-507ec2618e8f">
     
     <!-- Link to Tailwind CSS from CDN -->
