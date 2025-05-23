@@ -16,6 +16,11 @@ echo "<p>Starting gallery admin fix process...</p>";
 
 $pdo = connect_db();
 
+// Base directory of the project; can be overridden with the KOSMO_BASE_DIR environment variable
+$baseDir = getenv('KOSMO_BASE_DIR') ?: __DIR__;
+$adminPhpPath = $baseDir . '/admin.php';
+$fixAdminGalleryPath = $baseDir . '/fix-admin-gallery.php';
+
 try {
     // Begin transaction to ensure all changes happen together
     $pdo->beginTransaction();
@@ -138,8 +143,8 @@ foreach (\$categories as \$category) {
     \$categoryMap[\$category['name']] = \$category['id'];
 }
 
-// Read the admin.php file
-\$adminFile = file_get_contents('/home/bestluck/html/admin.php');
+// Read the admin.php file from the same directory as this script
+\$adminFile = file_get_contents(__DIR__ . '/admin.php');
 
 // Find the sync_gallery_with_frontend function
 \$pattern = '/function sync_gallery_with_frontend\\(\\) \\{.*?\\}/s';
@@ -317,7 +322,7 @@ if (!empty(\$matches[0])) {
     \$adminFile = preg_replace(\$pattern, \$newFunction, \$adminFile);
     
     // Write the updated file
-    file_put_contents('/home/bestluck/html/admin.php', \$adminFile);
+    file_put_contents($adminPhpPath, \$adminFile);
     
     echo '<p style=\"color: green; font-weight: bold;\">Admin.php file updated successfully!</p>';
 } else {
@@ -328,7 +333,7 @@ echo '<p><a href=\"admin.php?view=gallery\">Return to Gallery Management</a></p>
 ?>";
     
     // Write the update script to a file
-    file_put_contents('/home/bestluck/html/fix-admin-gallery.php', $updateScript);
+    file_put_contents($fixAdminGalleryPath, $updateScript);
     echo "<p>Created fix-admin-gallery.php script.</p>";
     
     // Commit the transaction
