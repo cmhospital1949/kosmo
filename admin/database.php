@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../config.php';
 session_start();
 
 // Check if user is logged in
@@ -8,10 +9,6 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 }
 
 // Database configuration
-$dbHost = 'db.kosmo.or.kr';
-$dbName = 'dbbestluck';
-$dbUser = 'bestluck';
-$dbPassword = 'cmhospital1949!';
 
 $message = '';
 $error = '';
@@ -19,7 +16,7 @@ $dbInfo = [];
 
 // Test database connection
 try {
-    $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPassword);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Get database information
@@ -58,7 +55,7 @@ try {
         ROUND(SUM(data_length + index_length) / 1024 / 1024, 2) AS size 
         FROM information_schema.TABLES 
         WHERE table_schema = ?");
-    $stmt->execute([$dbName]);
+    $stmt->execute([$dbname]);
     $dbInfo['size'] = $stmt->fetchColumn() . ' MB';
     
 } catch (PDOException $e) {
@@ -70,7 +67,7 @@ try {
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action'])) {
     if ($_POST['action'] === 'reset_all' && isset($_POST['confirm_reset']) && $_POST['confirm_reset'] === 'RESET') {
         try {
-            $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPassword);
+            $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
             // Drop existing tables
@@ -91,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action'])) {
         }
     } elseif ($_POST['action'] === 'import_programs' && isset($_POST['confirm_import']) && $_POST['confirm_import'] === 'IMPORT') {
         try {
-            $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPassword);
+            $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
             // Import programs from the programs.php file
@@ -252,7 +249,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action'])) {
                         
                         <div class="flex items-center">
                             <div class="w-1/3 font-medium">Database:</div>
-                            <div class="w-2/3"><?php echo htmlspecialchars($dbName); ?></div>
+                            <div class="w-2/3"><?php echo htmlspecialchars($dbname); ?></div>
                         </div>
                         
                         <div class="flex items-center">

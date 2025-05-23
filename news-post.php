@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/config.php';
 // Specify default language and set language cookie if not present
 if (!isset($_COOKIE['language'])) {
     setcookie('language', 'en', time() + (86400 * 30), "/");
@@ -18,10 +19,7 @@ if (empty($slug)) {
 
 // Database connection
 function connect_db() {
-    $host = 'db.kosmo.or.kr';
-    $dbname = 'dbbestluck';
-    $username = 'bestluck';
-    $password = 'cmhospital1949!';
+    global $host, $dbname, $username, $password;
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

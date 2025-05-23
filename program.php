@@ -1,14 +1,11 @@
 <?php
+require_once __DIR__ . '/config.php';
 // Get the program slug from the URL
 $slug = $_GET['slug'] ?? '';
 $locale = $_GET['lang'] ?? 'en';
 $isKorean = $locale === 'ko';
 
 // Database connection
-$host = 'db.kosmo.or.kr';
-$dbname = 'dbbestluck';
-$username = 'bestluck';
-$password = 'cmhospital1949!';
 
 // Initialize $program variable with default values
 $program = [];

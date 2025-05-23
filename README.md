@@ -38,6 +38,15 @@ The KOSMO Foundation website provides information about our organization, progra
   - User: bestluck
   - Password: cmhospital1949!
 
+## Environment Variables
+
+The PHP scripts read database credentials from environment variables. Set the
+following variables before running the site:
+
+- `DB_HOST` – Database host
+- `DB_NAME` – Database name
+- `DB_USER` – Database user
+- `DB_PASS` – Database password
 
 ## Contact Information
 

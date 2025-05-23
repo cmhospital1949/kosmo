@@ -1,13 +1,10 @@
 <?php
+require_once __DIR__ . '/config.php';
 // This script takes a more direct approach to fix the admin panel display issues
 
 // First, let's reset the gallery data completely to ensure a clean state
 function reset_gallery_data() {
     // Connect to the database
-    $host = 'db.kosmo.or.kr';
-    $dbname = 'dbbestluck';
-    $username = 'bestluck';
-    $password = 'cmhospital1949!';
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

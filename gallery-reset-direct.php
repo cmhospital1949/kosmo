@@ -1,12 +1,10 @@
 <?php
+require_once __DIR__ . '/config.php';
 // Direct gallery reset that doesn't depend on admin.php
 
 // Database connection
 function connect_db() {
-    $host = 'db.kosmo.or.kr';
-    $dbname = 'dbbestluck';
-    $username = 'bestluck';
-    $password = 'cmhospital1949!';
+    global $host, $dbname, $username, $password;
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

@@ -1,13 +1,10 @@
 <?php
+require_once __DIR__ . '/config.php';
 // Get the requested language
 $locale = $_GET['lang'] ?? 'en';
 $isKorean = $locale === 'ko';
 
 // Connect to the database
-$host = 'db.kosmo.or.kr';
-$dbname = 'dbbestluck';
-$username = 'bestluck';
-$password = 'cmhospital1949!';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

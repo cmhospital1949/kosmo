@@ -1,9 +1,6 @@
 <?php
+require_once __DIR__ . '/config.php';
 // Database connection
-$host = 'db.kosmo.or.kr';
-$dbname = 'dbbestluck';
-$username = 'bestluck';
-$password = 'cmhospital1949!';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

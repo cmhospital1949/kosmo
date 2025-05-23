@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/config.php';
 // This script will fix the gallery functionality by updating the database directly
 
 function display_message($message, $type = 'info') {
@@ -8,7 +9,7 @@ function display_message($message, $type = 'info') {
 
 // Connect to database
 try {
-    $pdo = new PDO('mysql:host=db.kosmo.or.kr;dbname=dbbestluck;charset=utf8mb4', 'bestluck', 'cmhospital1949!');
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     display_message("Connected to database successfully.");

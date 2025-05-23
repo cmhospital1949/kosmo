@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/config.php';
 // Update donate.php to use donation settings from database
 $donateFilePath = 'donate.php';
 $donateContent = file_get_contents($donateFilePath);
@@ -9,10 +10,7 @@ $phpStartPattern = '<?php
 $phpStartReplacement = '<?php
 // Database connection
 function connect_db() {
-    $host = \'db.kosmo.or.kr\';
-    $dbname = \'dbbestluck\';
-    $username = \'bestluck\';
-    $password = \'cmhospital1949!\';
+    global $host, $dbname, $username, $password;
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);

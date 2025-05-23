@@ -1,14 +1,12 @@
 <?php
+require_once __DIR__ . '/config.php';
 // This script will fix the admin panel's gallery functionality by:
 // 1. Checking and correcting the gallery category IDs
 // 2. Ensuring all gallery images are properly linked
 
 // Database connection
 function connect_db() {
-    $host = 'db.kosmo.or.kr';
-    $dbname = 'dbbestluck';
-    $username = 'bestluck';
-    $password = 'cmhospital1949!';
+    global $host, $dbname, $username, $password;
     
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
