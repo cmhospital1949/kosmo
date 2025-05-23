@@ -6,6 +6,7 @@ Thumbs.db
 *.log
 *.tmp
 *.bak
+*.backup
 *.swp
 
 # 🧰 편집기 & IDE 설정
