@@ -5,16 +5,14 @@ $locale = $_GET['lang'] ?? 'en';
 $isKorean = $locale === 'ko';
 
 // Database connection
-$host = 'db.kosmo.or.kr';
-$dbname = 'dbbestluck';
-$username = 'bestluck';
-$password = 'cmhospital1949!';
+
+require_once __DIR__ . '/lib/Database.php';
 
 // Initialize $program variable with default values
 $program = [];
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo = Database::getConnection();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Get the program data from the database using the slug

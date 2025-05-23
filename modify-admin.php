@@ -1,12 +1,10 @@
 <?php
 // Create donation_settings table
-$host = 'db.kosmo.or.kr';
-$dbname = 'dbbestluck';
-$username = 'bestluck';
-$password = 'cmhospital1949!';
+
+require_once __DIR__ . '/lib/Database.php';
 
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo = Database::getConnection();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Create donation_settings table if it doesn't exist
