@@ -2,10 +2,10 @@
 // Database connection file
 
 function get_db_connection() {
-    $dbHost = 'db.kosmo.or.kr';
-    $dbName = 'dbbestluck';
-    $dbUser = 'bestluck';
-    $dbPassword = 'cmhospital1949!';
+    $dbHost = getenv('DB_HOST');
+    $dbName = getenv('DB_NAME');
+    $dbUser = getenv('DB_USER');
+    $dbPassword = getenv('DB_PASS');
     
     try {
         // First, test if the database exists

@@ -1,16 +1,13 @@
 <?php
+require_once __DIR__ . '/lib/Database.php';
 // This script takes a more direct approach to fix the admin panel display issues
 
 // First, let's reset the gallery data completely to ensure a clean state
 function reset_gallery_data() {
     // Connect to the database
-    $host = 'db.kosmo.or.kr';
-    $dbname = 'dbbestluck';
-    $username = 'bestluck';
-    $password = 'cmhospital1949!';
-    
+    $pdo = Database::getConnection();
+
     try {
-        $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         // Start transaction

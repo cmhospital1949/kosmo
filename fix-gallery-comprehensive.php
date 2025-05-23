@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/lib/Database.php';
 // This script provides a comprehensive fix for the gallery functionality
 
 echo "<h1>Comprehensive Gallery Fix</h1>";
@@ -7,13 +8,9 @@ echo "<p>Running gallery database reset and admin panel fix...</p>";
 // Step 1: Reset and rebuild the gallery database tables
 function reset_gallery_database() {
     // Connect to the database
-    $host = 'db.kosmo.or.kr';
-    $dbname = 'dbbestluck';
-    $username = 'bestluck';
-    $password = 'cmhospital1949!';
-    
+    $pdo = Database::getConnection();
+
     try {
-        $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         
         // Start transaction (only if we're not already in one)
@@ -701,13 +698,10 @@ function create_direct_gallery_reset() {
 // Direct gallery database reset that bypasses transaction logic
 
 // Connect to the database
-\$host = 'db.kosmo.or.kr';
-\$dbname = 'dbbestluck';
-\$username = 'bestluck';
-\$password = 'cmhospital1949!';
+require_once __DIR__ . '/../lib/Database.php';
 
 try {
-    \$pdo = new PDO(\"mysql:host=\$host;dbname=\$dbname;charset=utf8mb4\", \$username, \$password);
+    \$pdo = Database::getConnection();
     \$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     echo \"<h2>Gallery Database Reset</h2>\";

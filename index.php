@@ -99,12 +99,8 @@ if ($lang == 'en') {
 // Get the featured programs from database
 try {
     // Database connection
-    $host = 'db.kosmo.or.kr';
-    $dbname = 'dbbestluck';
-    $username = 'bestluck';
-    $password = 'cmhospital1949!';
-    
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    require_once __DIR__ . '/lib/Database.php';
+    $pdo = Database::getConnection();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Get the first 3 programs (top priority programs should be the ones with lowest IDs)

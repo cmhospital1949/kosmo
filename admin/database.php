@@ -8,10 +8,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 }
 
 // Database configuration
-$dbHost = 'db.kosmo.or.kr';
-$dbName = 'dbbestluck';
-$dbUser = 'bestluck';
-$dbPassword = 'cmhospital1949!';
+require_once __DIR__ . '/../lib/Database.php';
 
 $message = '';
 $error = '';
@@ -19,7 +16,7 @@ $dbInfo = [];
 
 // Test database connection
 try {
-    $pdo = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8mb4", $dbUser, $dbPassword);
+    $pdo = Database::getConnection();
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Get database information
